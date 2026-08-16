@@ -1,3 +1,4 @@
+import io
 import json
 from typing import Optional
 
@@ -86,8 +87,6 @@ def download(dataset_id: str):
 
 
 def io_bytes(df):
-    import io
-
     import pandas as pd
 
     buf = io.BytesIO()
